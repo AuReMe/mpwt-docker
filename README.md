@@ -1,6 +1,6 @@
 # pathway-tools-multiprocessing-docker
 
-A dockerfile for multiprocessing Pathway-Tools to create multiple PGDB.
+A dockerfile for multiprocessing Pathway-Tools to create multiple PGDB using batch mode.
 
 ### Table of Contents
 1. [Requirements](#Requirements)
@@ -12,7 +12,7 @@ Use a [python script](https://gitlab.inria.fr/abelcour/pathway-tools_multiproces
 
 ## Requirements
 
-Need a Pathway-Tools installer. You can obtained it [here](http://bioinformatics.ai.sri.com/ptools/). The dockerfile is parametred with Pathway-tools 22.0.
+Need a Pathway-Tools installer. You can obtained it [here](http://bioinformatics.ai.sri.com/ptools/). The dockerfile is configured with Pathway-tools 22.0.
 
 ## Data structure
 
@@ -55,3 +55,5 @@ The output will be inside each Folder_for_species_1 folder (look at [Data struct
 There will be four files with the genbank (genetic-elements.dat, organism-params.dat, pathologic.log, script.lisp). These files are used for creating PGDB, exporting result files and to log the analysis.
 
 A folder is also present, named output. In this folder there is all the result files of the analysis.
+
+The docker has been tested with Pathway-Tools 22.0.
