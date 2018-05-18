@@ -10,7 +10,6 @@ LABEL Description="Multiprocessing Pathway-Tools 22.0 in Docker container"
 RUN apt-get -y update && \
     apt-get install -y \
     csh \
-    git \
     ncbi-blast+ \
     libxm4 \
     gnome-terminal;\
