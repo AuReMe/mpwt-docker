@@ -28,8 +28,5 @@ RUN mkdir programs;\
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install multiprocessing script and its dependencies.
-RUN cd /programs;\
-    git clone https://gitlab.inria.fr/abelcour/pathway-tools_multiprocessing.git;\
-    curl https://bootstrap.pypa.io/get-pip.py | python3;\
-    pip install -r pathway-tools_multiprocessing/requirements.txt;\
-    echo "alias mpwt='python3 /programs/pathway-tools_multiprocessing/pathway_tools_multiprocess.py'" >> ~/.bashrc
+RUN curl https://bootstrap.pypa.io/get-pip.py | python3;\
+    pip install mpwt
