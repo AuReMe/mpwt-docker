@@ -8,7 +8,7 @@ A dockerfile for multiprocessing Pathway-Tools's PathoLogic inference to create 
 3. [Installation and usage](#Installation-and-usage)
 
 
-Use a [python script](https://gitlab.inria.fr/abelcour/mpwt) with the multiprocessing library to run Pathway-Tools on multiple genome.
+Use a [python script](https://gitlab.inria.fr/abelcour/mpwt) with the multiprocessing library to run Pathway-Tools on multiple genomes.
 
 ## Requirements
 
@@ -40,7 +40,7 @@ sudo docker build -t my_image .
 sudo docker run -ti -v /my/path/to/my/data:/shared --name="my_container" my_image bash
 ```
 
-Note: the installer must be placed in the same folder than the dockerfile. The name of the file is currently hardcode (so if you use another version it must be changed). It could be fine if the filename is detected (Pathway-Tools installer filename have a specific structure).
+Note: the installer must be placed in the same folder than the dockerfile. The name of the file is currently hardcoded (so if you use another version it must be changed). It could be fine if the filename is detected (Pathway-Tools installer filename have a specific structure).
 
 Folder_input must be in /my/path/to/my/data.
 
@@ -54,6 +54,6 @@ The output will be inside each Folder_for_species_1 folder (look at [Data struct
 
 There will be four files with the genbank (genetic-elements.dat, organism-params.dat, pathologic.log, script.lisp). These files are used for creating PGDB, exporting result files and to log the analysis.
 
-A folder is also present, named output. In this folder there is all the result files of the analysis.
+A folder is also present named output. In this folder there is all the result files of the analysis.
 
-The docker has been tested with Pathway-Tools 20.5 and 22.0. The size of the image is araound 5.57Gb.
+The docker has been tested with Pathway-Tools 20.5 and 22.0. The size of the image is around 5.57Gb.
