@@ -12,6 +12,7 @@ RUN apt-get -y update && \
     csh \
     ncbi-blast+ \
     libxm4 \
+    iputils-ping \
     gnome-terminal;\
     echo "[ncbi]\nData=/usr/bin/data" > ~/.ncbirc
 
