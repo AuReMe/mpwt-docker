@@ -8,7 +8,7 @@ A dockerfile for multiprocessing Pathway-Tools's PathoLogic inference to create 
 3. [Installation and usage](#Installation-and-usage)
 
 
-Use a [python script](https://gitlab.inria.fr/abelcour/mpwt) with the multiprocessing library to run Pathway-Tools on multiple genomes.
+Use a [python script](https://github.com/AuReMe/mpwt) with the multiprocessing library to run Pathway-Tools on multiple genomes.
 
 ## Requirements
 
